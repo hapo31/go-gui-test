@@ -21,7 +21,7 @@ type Token struct {
 	Value int
 }
 
-func tokenize(inputs []string) ([]Token, error) {
+func Tokenize(inputs []string) ([]Token, error) {
 	var tokens []Token
 
 	for _, v := range inputs {
@@ -64,7 +64,7 @@ func parse(input string) (Token, error) {
 	}
 }
 
-func calculate(base int, operator Operator, value int) (int, error) {
+func Calculate(base int, operator Operator, value int) (int, error) {
 	switch operator {
 	case Plus:
 		return base + value, nil
