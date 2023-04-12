@@ -1,4 +1,4 @@
-module github.com/happo31
+module github.com/hapo31
 
 go 1.20
 
