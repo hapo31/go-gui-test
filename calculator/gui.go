@@ -35,7 +35,7 @@ func NewCalculatorWindow(app fyne.App) *CalculatorWindow {
 		o = append(o, v)
 	}
 
-	c := container.NewWithoutLayout(o...)
+	c := container.NewWithoutLayout(container.NewGridWrap(fyne.NewSize(10, 10), o...))
 	w.SetContent(c)
 
 	return &CalculatorWindow{
